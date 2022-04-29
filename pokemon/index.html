@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokemon generation staters</title>
+        <link rel="stylesheet" href="pokemonCSS.css">
+        <script src="https://kit.fontawesome.com/d2724ef1c8.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- ********* title ******** -->
+        <header class="header">
+            <span class="title">stater pokemons in various </span>
+            <br>
+            <span class="title"> generations and games !!!</span>
+        </header>
+        <!-- ******** selectors ******* -->
+        <div class="all_selector">
+            <select class="selector" id="generations">
+                <option value="1" class="generation"> generation I</option>
+                <option value="2" class="generation"> generation II</option>
+                <option value="3" class="generation"> generation III</option>
+                <option value="4" class="generation"> generation IV</option>
+                <option value="5" class="generation"> generation V</option>
+                <option value="6" class="generation"> generation VI</option>
+                <option value="7" class="generation"> generation VII</option>
+                <option value="8" class="generation"> generation VIII</option>
+            </select>
+            <select class="selector" id="games">
+            </select>
+            <!-- mode toggle button -->
+            <div class="switch-container">
+                <span class="mode">Light mode</span>
+                <label class="mode-toggle">
+                    <input type="checkbox" id="on-off">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <section class="pokemon-display">
+            <!-- <div class="pokemons-by-primary-type">
+            <div class="pokemon">
+                <img class="poke-img" src="./starterPics/charmander.png" alt="" class="pokePic">
+                <h3 class="name">charmander</h3>
+                <div class="types">
+                    <h3 class="type fire">fire</h3>
+                </div>
+            </div>
+            <div class="evolution-arrow">
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+            <div class="pokemon">
+                <img class="poke-img" src="./starterPics/charmeleon.png" alt="" class="pokePic">
+                <h3 class="name">charmeleon</h3>
+                <div class="types">
+                    <h3 class="type fire">fire</h3>
+                </div>
+            </div>
+            <div class="evolution-arrow">
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+            <div class="pokemon">
+                <img class="poke-img" src="./starterPics/charizard.png" alt="" class="pokePic">
+                <h3 class="name">charizard</h3>
+                <div class="types">
+                    <h3 class="type fire">fire</h3>
+                    <h3 class="type flying">flying</h3>
+                </div>
+            </div>
+        </div> -->
+        </section>
+        <script type="module" src="pokemonApp.js"></script>
+    </body>
+
+</html>

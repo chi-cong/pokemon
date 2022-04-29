@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,500&display=swap');
+
+:root{
+
+    /* types's color */
+    --water : #00bfff;
+    --fire: #f73718;
+    --grass: #7cfc00;
+    --steel: silver;
+    --fighting: firebrick;
+    --psychic: #e75480;
+    --electric: yellow;
+    --bug:#a8c700;
+    --ice:#00ffff;
+    --flying: #b491c8;
+    --dragon:blueviolet;
+    --normal:#ccc;
+    --ghost:#301934;
+    --dark: #332211;
+    --ground:#f2cf0d;
+    --rock:#b58e62;
+    --poison:indigo;
+}
+
+body{
+    margin: 0px;
+    background: #ffddd2;
+}
+.header {
+    display:block;
+    margin-top: 3vh;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.title {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    color: #C8553D;
+    font-family: 'Merriweather', serif;
+}
+.all_selector{
+    width: 100%;
+    display: block;
+    float: left;
+}
+.selector {
+    /* box-sizing: border-box; */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background: #588B8B;
+    margin: 25px 50px ;
+}
+/* .generation option:hover{
+    background: chocolate;
+} */
+/********* toggle button *********/
+.switch-container{
+    height: 64px;
+    display: inline-flex;
+    position: relative;
+    left: 45vw;
+}
+.mode-toggle {
+    position: relative;
+    display: inline-block;
+    width : 80px;
+    height: 38px;
+    margin-left: 15px;
+    bottom: 10px;
+}
+.mode{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.mode-toggle input{
+    opacity: 0;
+    width:0;
+    height: 0;
+}
+.slider{
+    position: relative;
+    bottom:14px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider::before{
+    position: relative;
+    content: "";
+    display: inline-block;
+    background: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    top:5px;
+    left:5px;
+    transition: .4s;
+}
+input:checked + .slider:before{
+    transform: translateX(42px);
+}
+input:checked + .slider {
+    background-color: #ff6600;
+}
+/************ pokemon ***********/
+.pokemon-display{
+    display: block;
+    background:none;
+    text-align: center;
+    width:auto;
+}
+.pokemons-by-primary-type{
+    width:auto;
+    height: auto;
+}
+.pokemon {
+    display: inline-block;
+    margin: 15px;
+    width: auto;
+}
+.name{
+    display: inline-block;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+}
+.evolution-arrow{
+    position: relative;
+    display: inline-grid;
+    height: 100%;
+    bottom: 50px;
+}
+.fa-long-arrow-alt-right{
+    display: inline-grid;
+    margin: 15px;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.poke-img{
+    display: block;
+    width:200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.types{
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* background: chartreuse; */
+}
+.type{
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 7px;
+    width: auto ;
+    height: auto;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ******* type colors **** */
+.normal{
+    background: var(--normal);
+}
+.fire{
+    background: var(--fire);
+}
+.water{
+    background: var(--water);
+}
+.electric{
+    background: var(--electric);
+}
+.grass{
+    background:  var(--grass);
+}
+.ice{
+    background:  var(--ice);
+}
+.poison{
+    background:  var(--poison);
+}
+.ground{
+    background: var(--ground);
+}
+.flying{
+    background: var(--flying);
+}
+.psychic{
+    background: var(--psychic);
+}
+.bug{
+    background: var(--bug);
+}
+.rock{
+    background: var(--rock);
+}
+.ghost{
+    background: var(--ghost);
+}
+.dragon{
+    background: var(--dragon);
+}
+.dark{
+    background: var(--dark);
+}
+.steel{
+    background:var(--steel);
+}
+
+
+
+/* *********** dark mode *********** */
+.dark_mode_body {
+    background: #222;
+    color: azure;
+}
+.dark_mode_selector{
+    background: #660708;
+}
